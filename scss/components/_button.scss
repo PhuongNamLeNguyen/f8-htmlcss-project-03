@@ -1,0 +1,14 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 205px;
+    height: 60px;
+    line-height: 1.75;
+    border-radius: 22px;
+}
+
+.btn--primary {
+    background: #2E80CE;
+    color: #FFF;
+}

@@ -1,0 +1,119 @@
+.top-bar {
+    background-color: #10375C;
+    color: #FFF;
+    padding: 30px 0;
+
+    .container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+
+            &__name {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+
+                span {
+                    color: #FFF;
+
+                    &:first-child {
+                        font-size: 1.8rem;
+                        font-weight: 400;
+                        line-height: 0.78;
+                    }
+
+                    &:last-child {
+                        font-size: 1.2rem;
+                        font-weight: 300;
+                        line-height: 1.167;
+                    }
+                }
+            }
+        }
+    }
+
+    &__nav {
+        margin-left: 300px;
+
+        .nav {
+            display: flex;
+            align-items: center;
+
+            &__link {
+                padding: 5px 20px;
+                color: #C9D2DA;
+                font-weight: 300;
+                line-height: 1.75;
+                transition: all 0.3s;
+                position: relative;
+
+                &::before {
+                    position: absolute;
+                    top: 50%;
+                    left: 6px;
+                    transform: translate(0, -50%);
+                    content: "";
+                    width: 6px;
+                    height: 6px;
+                    background-color: #FFF;
+                    border-radius: 50%;
+                    transition: all 0.3s;
+                    opacity: 0;
+                    visibility: hidden;
+                }
+
+                &.active {
+                    text-shadow: -0.3px 0 0 #FFF;
+                    color: #FFF;
+
+                    &::before {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+
+                &:hover {
+                    text-shadow: -0.3px 0 0 #FFF;
+                    color: #FFF;
+                    opacity: 1;
+                    visibility: visible;
+
+                    // &::before {
+                    //     opacity: 1;
+                    //     visibility: visible;
+                    // }
+                }
+            }
+        }
+    }
+    &__cta {
+        margin-left: auto;
+        margin-right: 0;
+        display: flex;
+        align-items: center;
+
+        .cta {
+            &__btn {
+                min-width: 105px;
+                height: 45px;
+                color: #FFF;
+
+                &:first-child {
+                    color: #C9D2DA;
+                    transition: all 0.3s;
+
+                    &:hover {
+                        text-shadow: -0.3px 0 0 #FFF;
+                        color: #FFF;
+                    }
+                }
+            }
+        }
+    }
+}
