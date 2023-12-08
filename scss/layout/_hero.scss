@@ -1,9 +1,57 @@
 .hero {
     background-color: #10375C;
     color: #FFF;
-    height: calc(100vh - 105px);
 
     .container {
+        height: calc(100vh - 105px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
+    &__text-box {
+
+        .hero {
+            &__heading {
+                max-width: 520px;
+            }
+
+            &__desc {
+                color: #FFF;
+                margin: 22px 0 38px;
+            }
+
+            &__cta {
+                display: flex;
+                align-items: center;
+                gap: 38px;
+            }
+
+            &__btn {
+                color: #FFF;
+            }
+        }
+    }
+
+    &__img-box {
+        display: flex;
+        align-items: center;
+
+        .hero__img {
+            border-radius: 6px;
+
+            &:first-child {
+                width: 330px;
+                height: 540px;
+                object-fit: cover;
+            }
+
+            &:last-child {
+                border-radius: 0px 6px 6px 0px;
+                width: 210px;
+                height: 410px;
+                object-fit: cover;
+            }
+        }
     }
 }

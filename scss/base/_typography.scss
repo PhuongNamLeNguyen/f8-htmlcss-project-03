@@ -1,0 +1,28 @@
+.heading {
+    &--primary {
+        color: #FFF;
+        font-size: 7rem;
+        font-weight: 600;
+        line-height: 1.14;
+        letter-spacing: -1.4px;
+    }
+
+    &--secondary {
+        color: #10375C; 
+        text-align: center;
+        font-size: 5rem;
+        font-weight: 600;
+        line-height: 1.2;
+        letter-spacing: -1px;
+    }
+}
+
+.desc {
+    &--primary {
+        max-width: 470px;
+        color: #575F66;
+        font-size: 1.8rem;
+        font-weight: 300;
+        line-height: 1.67;
+    }
+}
